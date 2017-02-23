@@ -1,0 +1,47 @@
+{
+  "name": "wordsmith-sheets-express",
+  "version": "0.1.0",
+  "description": "An example of how to update a node based website with Wordsmith and Google Sheets",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ai-invent/wordsmith-sheets-express.git"
+  },
+  "author": "Rachel Tublitz",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "css-loader": "^0.26.1",
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.5",
+    "express": "^4.14.1",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.0",
+    "pusher": "^1.5.1",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1",
+    "sass-loader": "^5.0.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.1",
+    "webpack-dev-middleware": "^1.10.0",
+    "webpack-hot-middleware": "^2.16.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-latest": "^6.22.0",
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.9.0"
+  },
+  "engines": {
+    "node": "7.2.x"
+  },
+  "scripts": {
+    "start": "node server",
+    "build:dev": "webpack --config ./config/webpack.config.js --env=dev --progress --profile --colors",
+    "build:prod": "webpack --config ./config/webpack.config.js --env=prod --progress --profile --colors",
+    "lint": "eslint .",
+    "postinstall": "npm run build:prod"
+  }
+}
