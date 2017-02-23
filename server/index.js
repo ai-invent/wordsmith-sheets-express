@@ -42,13 +42,13 @@ if (IS_DEV) {
   });
 }
 
-app.post('/api/update', function(req, res) {
+app.post('/api/update', (req, res) => {
   if (req.headers.authorization === process.env.APP_SECRET) {
     APIResponse.onUpdate(req, res);
   } else {
     res.send({
       success: false,
-      message: 'Not authorized to perform this request.'
+      message: 'Not authorized to perform this request.',
     });
   }
 });

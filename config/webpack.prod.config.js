@@ -23,7 +23,7 @@ module.exports = {
         PUSHER_APP_KEY: `'${process.env.PUSHER_APP_KEY}'`,
         PUSHER_CHANNEL: `'${process.env.PUSHER_CHANNEL}'`,
         PUSHER_EVENT: `'${process.env.PUSHER_EVENT}'`,
-      }
+      },
     }),
   ],
   module: {
@@ -42,16 +42,16 @@ module.exports = {
         'style-loader', {
           loader: 'css-loader',
           options: {
-            sourceMap: true
-          }
+            sourceMap: true,
+          },
         }, {
           loader: 'sass-loader',
           options: {
             sourceMap: true,
-            includePaths: [path.join(__dirname, '/../app/src/styles/')]
-          }
-        }
-      ]
-    }, ],
-  }
+            includePaths: [path.join(__dirname, '/../app/src/styles/')],
+          },
+        },
+      ],
+    }],
+  },
 };

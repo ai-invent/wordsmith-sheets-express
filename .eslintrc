@@ -1,6 +1,9 @@
 {
   "extends": "airbnb",
-
+  "globals": {
+    "APP_CONFIG": 1,
+    "document": 1
+  },
   "rules": {
     "no-console": [
       "error",
