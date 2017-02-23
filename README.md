@@ -53,7 +53,7 @@ First, generate a random string to use as an `APP_SECRET`. There's lots of tools
   * PUSHER_CHANNEL => make up a name, it doesn't matter what it is. Ie, 'test-channel'.
   * PUSHER_EVENT => make up a name, it doesn't matter what it is. Ie, 'test-event'.
 * `npm i` - install all dependencies
-* `npm start` - this will start the application. Open up `http://localhost:3000/` and you should see it.
+* `npm start` - this will start the application. Open up `http://localhost:3000/` and you should something that looks [like this](https://wordsmith-sheets-express.herokuapp.com/).
 
 ### First Time Deployment Setup
 

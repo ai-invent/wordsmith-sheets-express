@@ -43,7 +43,8 @@ if (IS_DEV) {
 }
 
 app.post('/api/update', function(req, res) {
-  console.info(req);
+  console.info(req.headers);
+  console.log(process.env.APP_SECRET);
   APIResponse.onUpdate(req, res);
 });
 
