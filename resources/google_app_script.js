@@ -7,7 +7,9 @@
 function onEdit(event) {
   var WEBSITE_AUTHORIZATION_HEADER = ''; // this should match the APP_SECRET in .env
   var WEBSITE_POST_URL = 'https://your-website-here.com/api/update'; // change the hostname to match your own
-  var TRIGGER_COL_INDEX = 18; // 18th column from the left: when changed will trigger a post to website.
+
+   // This is the column that when changed, will trigger a post to your website. Adjust to whatever number makes sense for your dataset.
+  var TRIGGER_COL_INDEX = 19;
 
   var sheet = SpreadsheetApp.getActiveSheet();
   var cell = sheet.getActiveCell();
