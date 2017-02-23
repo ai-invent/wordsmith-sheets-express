@@ -43,9 +43,14 @@ if (IS_DEV) {
 }
 
 app.post('/api/update', function(req, res) {
-  console.info(req.headers);
-  console.log(process.env.APP_SECRET);
-  APIResponse.onUpdate(req, res);
+  if (req.headers.authorization === process.env.APP_SECRET) {
+    APIResponse.onUpdate(req, res);
+  } else {
+    res.send({
+      success: false,
+      message: 'Not authorized to perform this request.'
+    });
+  }
 });
 
 app.listen(PORT, (err) => {
