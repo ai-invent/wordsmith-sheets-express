@@ -43,6 +43,7 @@ if (IS_DEV) {
 }
 
 app.post('/api/update', function(req, res) {
+  console.info(req);
   APIResponse.onUpdate(req, res);
 });
 

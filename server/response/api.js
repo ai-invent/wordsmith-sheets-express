@@ -34,7 +34,6 @@ const getWordsmithPostOptions = (data) => {
 const APIResponse = {
 
   formatData(data) {
-    console.log(data);
     // Dates are coming in this format. 2015-01-02T05:00:00.000Z
     // Currently need to transform into this format.
     let formattedDate = data.date.split('T')[0];

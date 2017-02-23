@@ -6,7 +6,7 @@
  */
 function onEdit(event) {
   var WEBSITE_AUTHORIZATION_HEADER = ''; // this should match the APP_SECRET in .env
-  var WEBSITE_POST_URL = 'https://sheltered-temple-75385.herokuapp.com/api/update'; // change the hostname to match your own
+  var WEBSITE_POST_URL = 'https://your-website-here.com/api/update'; // change the hostname to match your own
   var TRIGGER_COL_INDEX = 18; // 18th column from the left: when changed will trigger a post to website.
 
   var sheet = SpreadsheetApp.getActiveSheet();
