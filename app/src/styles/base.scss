@@ -26,7 +26,6 @@ h1,h2,h3,p {
   padding: 2em;
   background: #FFF;
   border-radius: 0.2em;
-  min-width: 400px;
   box-shadow: 1px 1px 4px rgba(34, 84, 69, 0.79);
 
   p {
@@ -34,6 +33,7 @@ h1,h2,h3,p {
     font-size: 1.3rem;
     font-weight: 400;
     margin: 1em auto;
+    min-width: 400px;
   }
 
   h2 {
