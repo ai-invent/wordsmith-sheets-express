@@ -48,8 +48,8 @@ function onEdit(event) {
     }
   };
 
+  Logger.log(payload);
+
   // POST to website
   UrlFetchApp.fetch(WEBSITE_POST_URL, options);
-
-  Logger.log(payload);
 }
