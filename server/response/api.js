@@ -57,6 +57,7 @@ const APIResponse = {
           process.env.PUSHER_EVENT, {
             wordsmithData: parsedBody,
             sheetsData: req.body,
+            message: 'It works!',
           });
         res.send({
           success: true,

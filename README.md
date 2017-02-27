@@ -61,12 +61,12 @@ You'll need to deploy the application one time in order to have an endpoint that
 
 If you have a server that you're using, feel free to ignore this. Otherwise, we'll use Heroku.
 
-* Create a new heroku app. Select node.js as your development environment.
+* Create a new Heroku app. Select node.js as your development environment.
 * Install the Heroku CLI if you haven't already.
-* `heroku git:remote -a your-app-name` - set your heroku remote.
-* Open your app in the heroku dashboard. Go to Settings.
-* Add the nodejs buildpack.
-* Add all of your ENV vars from `.env` to 'Config Variables'.
+* `heroku git:remote -a your-app-name` - set your Heroku remote.
+* Open your app in the Heroku dashboard. Go to Settings.
+* Add the nodejs buildpack to your Heroku app.
+* Add all of your ENV vars from `.env` to 'Config Variables' in your Heroku dashboard.
 
 ### Deployment
 
