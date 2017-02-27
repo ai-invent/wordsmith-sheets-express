@@ -2,7 +2,7 @@
 
 This is a sample repository to show how to setup a website to integrate with Google Sheets and the Wordsmith API.
 
-It's build with node.js, using [Express](http://expressjs.com/) and assumes some familiarity with JavaScript.
+It's built with node.js, using [Express](http://expressjs.com/) and assumes some familiarity with JavaScript.
 
 ## Pre-requisites:
 
@@ -20,7 +20,7 @@ First, generate a random string to use as an `APP_SECRET`. There's lots of tools
 ### Pusher:
 
 * Create a new app.
-* Note the `app_id`, `key` and `secret` which you'll need in your app.
+* Note the `app_id`, `key`, and `secret` which you'll need in your app.
 
 ### Wordsmith:
 
@@ -66,7 +66,7 @@ If you have a server that you're using, feel free to ignore this. Otherwise, we'
 * `heroku git:remote -a your-app-name` - set your Heroku remote.
 * Open your app in the Heroku dashboard. Go to Settings.
 * Add the nodejs buildpack to your Heroku app.
-* Add all of your ENV vars from `.env` to 'Config Variables' in your Heroku dashboard.
+* Add all of your ENV vars from `.env` to 'Config Variables' in your Heroku dashboard. Make sure you add these or your app won't work properly in production.
 
 ### Deployment
 
